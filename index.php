@@ -1,23 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
 <?php get_header(); ?>
-
-<header class="bg-primary text-white text-center py-5">
-    <div class="container">
-        <h1 class="display-4"><?php bloginfo('name'); ?></h1>
-        <p class="lead"><?php bloginfo('description'); ?></p>
-    </div>
-</header>
-
 <main class="container my-5">
     <?php if (have_posts()) : ?>
         <div class="row">
@@ -57,12 +38,6 @@
 </main>
 
 <?php wp_footer(); ?>
-
-<footer class="bg-dark text-white text-center py-4">
-    <?php get_footer(); ?>
-    <p class="mb-0">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
-</footer>
-
 <!-- Bootstrap Bundle JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
